@@ -1,0 +1,47 @@
+body{
+    background-color: #161616;
+    margin: 0;
+    height: 100dvh;
+    display: grid;
+place-content: center center;
+}
+
+.spinner{
+    background-color:#150a04 ;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 400px;
+    aspect-ratio: 1;
+    animation: rotate 2s linear infinite;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background: linear-gradient(to right, #008C45 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #CD212A 66.66%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to right, #00723b 33.33%, #e6e6e6 33.33%, #e6e6e6 66.66%, #b71e24 66.66%);
+}
+
+
+@keyframes rotate{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
